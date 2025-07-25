@@ -96,11 +96,11 @@ export default Footer
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-700 bg-indigo-100">Home</a>
-                            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
-                            <a href="#programs" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
-                            <a href="#blogs" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blogs</a>
-                            <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
+                            <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-700 bg-indigo-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
+                <a href="programs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,8 @@ export default Footer
                 <div class="text-center px-6 max-w-4xl">
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Empowering Students Through Technology</h1>
                     <p class="text-xl text-gray-200 mb-8">Join our community of learners and create a better future through coding and entrepreneurship</p>
-                    <a href="#enroll" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg">Apply Now</a>
+                 
+ <a href="contact.html" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg">Apply Now</a>
                 </div>
             </div>
         </div>
@@ -808,59 +809,6 @@ export default Footer
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.394774863781!2d77.77901731526988!3d12.991163090842514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0cf4a38e5d5d%3A0xef9f4024452cb13!2sSarjapur%20Road%2C%20Sarjapur%2C%20Bengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1628570798188!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="col-span-2">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/49e3ae61-3b80-455c-834c-b60c2dcf8b70.png" alt="Navgurukul logo with tagline" class="h-10">
-                    <p class="mt-4 text-gray-300">
-                        Navgurukul is a non-profit initiative that provides quality education to students from underprivileged backgrounds, helping them launch careers in technology and business.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Quick Links</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:text-white">Home</a></li>
-                        <li><a href="#about" class="hover:text-white">About Us</a></li>
-                        <li><a href="#programs" class="hover:text-white">Programs</a></li>
-                        <li><a href="#blogs" class="hover:text-white">Blogs</a></li>
-                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
-                        <li><a href="#" class="hover:text-white">Guidelines</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between">
-                <p class="text-sm text-gray-500">
-                    © 2023 Navgurukul Sarjapur. All rights reserved.
-                </p>
-                <div class="mt-4 md:mt-0 flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script>
         // Mobile menu toggle

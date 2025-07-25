@@ -3,8 +3,20 @@ import { useState, useEffect } from 'react';
 
 
     const Navbar = () => {
+
+
+        const [scrolled, setScrolled] = useState(false);
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar?.classList.add('scrolled');
+            } else {
+                navbar?.classList.remove('scrolled');
+            }
+        });
       return (
-        <nav className="navbar fixed w-full z-50 bg-white/90 backdrop-blur-md">
+        <>
+          <nav className={`fixed w-full z-50 bg-white/90 backdrop-blur-md transition-all ${scrolled ? 'scrolled' : ''}`}>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
@@ -13,14 +25,14 @@ import { useState, useEffect } from 'react';
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-700 bg-indigo-100">Home</a>
-                            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
-                            <a href="#programs" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
-                            <a href="#blogs" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blogs</a>
-                            <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
+                            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-700 bg-indigo-100">Home</a>
+                            <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
+                            <a href="programs.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
+                            <a href="blog.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blog</a>
+                            <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
                         </div>
                     </div>
-                     </div>
+                </div>
                 <div class="hidden md:block">
                     <a href="#enroll" class="px-4 py-2 border border-transparent rounded-md text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700">Enroll Now</a>
                 </div>
@@ -31,19 +43,20 @@ import { useState, useEffect } from 'react';
                 </div>
             </div>
         </div>
-               
+
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-700 bg-indigo-100">Home</a>
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
-                <a href="#programs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
-                <a href="#blogs" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blogs</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-indigo-700 bg-indigo-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">About Us</a>
+                <a href="programs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Programs</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-indigo-700 hover:bg-indigo-50">Contact</a>
                 <a href="#enroll" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600">Enroll Now</a>
             </div>
         </div>
     </nav>
-)
+        </>
+      )
 }
 
 
