@@ -7,10 +7,14 @@ import CampusIntro from '../Components/CampusIntro';
 import CouncilMembersCard from '../Components/CouncilMembersCard';
 import EnrollmentSection from '../Components/EnrollmentSection';
 import ContactSection from '../Components/ContactSection';
+import Footer from '../Components/Footer';
+import HeroCarousal from '../Components/HeroCarousal';
+import MapCard from '../Components/MapCard';
 
 const HomePage = () => {
   return (
     <>
+    <HeroCarousal/>
     <CampusIntro/>
     <CouncilMembersCard/>
     <ProgramCard />
@@ -19,6 +23,7 @@ const HomePage = () => {
     <PlacementsStatusCard/>
     <EnrollmentSection/>
     <ContactSection/>
+    <MapCard/>
     </>
   )
 }

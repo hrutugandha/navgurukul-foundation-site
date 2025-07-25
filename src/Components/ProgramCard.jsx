@@ -7,7 +7,7 @@ const ProgramCard = () => {
     <section id="programs" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900">
+                <h2 class="text-3xl font-extrabold text-gray-900 ">
                     Our Programs
                 </h2>
                 <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">

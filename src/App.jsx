@@ -1,16 +1,14 @@
-// App.js
+import React from 'react';
 import Navbar from './Components/Navbar';
-import HeroCarousel from './Components/HeroCarousal';
-import ProgramCard from './Components/ProgramCard';
-import TestimonialCard from './Components/TestimonialCard';
-import BlogCard from './Components/BlogCard';
 import HomePage from './Pages/HomePage';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <HomePage/>
+      <Footer/>
     </div>
   );
 }
